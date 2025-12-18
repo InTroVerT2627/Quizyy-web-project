@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Adaptive Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="box">
+  <h1>Adaptive Quiz</h1>
+  <p class="sub">15 questions • Subject based • Smart scoring</p>
+
+  <div id="start">
+    <select id="subject">
+      <option value="">Select Subject</option>
+      <option value="physics">Physics</option>
+      <option value="maths">Maths</option>
+      <option value="coding">Coding</option>
+    </select>
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <div id="quiz" class="hide">
+    <p id="info"></p>
+    <h2 id="qText"></h2>
+
+    <button class="opt" onclick="answer(0)"></button>
+    <button class="opt" onclick="answer(1)"></button>
+    <button class="opt" onclick="answer(2)"></button>
+    <button class="opt" onclick="answer(3)"></button>
+  </div>
+
+  <div id="end" class="hide">
+    <h2>Completed</h2>
+    <p>Score: <span id="scoreTxt"></span></p>
+    <p>Skill Level: <b><span id="lvlTxt"></span></b></p>
+    <button onclick="location.reload()">Restart</button>
+  </div>
+</div>
+
+<script src="quiz.js"></script>
+</body>
+</html>

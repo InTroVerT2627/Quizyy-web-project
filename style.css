@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box {
+  background: white;
+  width: 440px;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.sub {
+  color: #555;
+}
+
+select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.opt {
+  background: #e5e7eb;
+  border: 1px solid #cbd5e1;
+}
+
+.hide {
+  display: none;
+}
